@@ -1,6 +1,6 @@
 import React from 'react';
 import './TechIcons.css'; // Import your CSS file for styling
-import { JavaScriptOutlined, Html5Outlined, Css3Outlined } from '@ant-design/icons';
+import { JavaScriptOutlined, Html5Outlined } from '@ant-design/icons';
 
 const TechIcons = () => {
   return (
