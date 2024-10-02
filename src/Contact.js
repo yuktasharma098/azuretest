@@ -7,10 +7,7 @@ import { Layout } from 'antd';
 const { Content } = Layout;
 
 const Contact = () => {
-    const handleDownload = () => {
-        const downloadUrl = '/Yukta_Sharma.pdf'; // Adjust the path based on your file location in src
-        window.open(downloadUrl, '_blank');
-      };
+   
   return (
     <Content id="contact" style={{ minHeight: '100vh', padding: '20px', position: 'relative' }}>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
