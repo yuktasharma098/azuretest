@@ -8,7 +8,7 @@ const { Content } = Layout;
 
 const Contact = () => {
     const handleDownload = () => {
-        const downloadUrl = '/Yukta_Sharma_Resume.pdf'; // Adjust the path based on your file location in src
+        const downloadUrl = '/Yukta_Sharma.pdf'; // Adjust the path based on your file location in src
         window.open(downloadUrl, '_blank');
       };
   return (
@@ -46,9 +46,8 @@ const Contact = () => {
             </p>
           </div>
           <a
-            href="/Yukta_Sharma_Resume.pdf" // Adjust the path based on your file location in src
-            download="Yukta_Sharma_Resume.pdf" // Specify the filename for download
-            onClick={handleDownload} // Handle the download action
+            href="/Yukta Sharma.pdf" // Adjust the path based on your file location in src
+            download
             style={{
               display: 'inline-block',
               marginTop: '20px',
@@ -58,6 +57,7 @@ const Contact = () => {
               color: '#1890ff', // Adjust color as needed
               cursor: 'pointer',
             }}
+            
           >
             Download Resume
           </a>
