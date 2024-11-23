@@ -21,13 +21,20 @@ html, body, #root {
   padding: 0 50px;
   font-family: 'Poppins', sans-serif;
 }
-
+.custom-menu {
+  flex-grow: 1; /* Allow the menu to take up available space */
+  display: flex;
+  justify-content: flex-end; /* Align menu items to the end */
+  background-color: transparent;
+  border-bottom: none;
+}
 .custom-menu-item {
   display: flex;
   align-items: center;
   color: black !important;
   font-weight: 500;
   font-size: 16px;
+
 }
 
 .ant-menu-horizontal > .ant-menu-item::after {

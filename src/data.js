@@ -1,19 +1,19 @@
 // data.js
 export const projects = [
     {
-      title: 'Project One',
+      title: 'Costen',
       description: 'This is a description for project one. It includes details about what the project is about, technologies used, and any other relevant information.',
     },
     {
-      title: 'Project Two',
+      title: 'IBPRO',
       description: 'This is a description for project two. It includes details about what the project is about, technologies used, and any other relevant information.',
     },
     {
-      title: 'Project Three',
+      title: 'Master Database',
       description: 'This is a description for project three. It includes details about what the project is about, technologies used, and any other relevant information.',
     },
     {
-      title: 'Project Four',
+      title: 'COVID APPLICATION',
       description: 'This is a description for project four. It includes details about what the project is about, technologies used, and any other relevant information.',
     },
     {
