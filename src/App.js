@@ -5,7 +5,6 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 
-import TechIcons from './TechIcons';
 
 const { Header, Content } = Layout;
 const { Link } = Anchor;
