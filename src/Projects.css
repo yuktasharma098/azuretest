@@ -1,0 +1,54 @@
+.project-card {
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card:hover {
+    background: linear-gradient(to bottom right, #f093fb, #f5576c);
+    color: white;
+
+  }
+  .project-card .ant-card {
+    background: #fff;
+    height: 100%;
+
+  }
+  .project-card:hover .ant-card {
+    background: none;
+    height: 100%;
+
+  }
+  
+  .project-card .ant-card-body {
+    transition: all 0.3s ease;
+    z-index: 1;
+
+  }
+  
+  .project-card:hover .ant-card-body {
+    color: white;
+
+  }
+  
+  .project-card:hover .ant-card-body p {
+    color: white;
+
+  }
+  
+  .project-card:hover .ant-card-head-title {
+    color: white;
+
+  }
+  .hover-link {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .hover-link:hover {
+    color: white;
+  }
