@@ -23,7 +23,7 @@ const App = () => (
             background: "-webkit-linear-gradient(left, #f093fb, #f5576c)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"
-          }}>Portfolio</span>
+          }}>Simplicity is the soul of efficiency</span>
         </div>
         <Menu
           theme="light"

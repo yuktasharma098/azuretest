@@ -32,17 +32,17 @@ export const projects = [
     },
     {
       title: 'COVID APPLICATION',
-      description: 'This is a description for project three. It includes details about what the project is about, technologies used, and any other relevant information.',
+      description: 'I have made this app during the phase of corona to make people aware and help them ',
       image:'../covidapp.webp',
-      link:'https://yuktasharma098.github.io/CovidApp/' 
+      link:'https://covidapp-bu2j.onrender.com' 
 
     },
-    {
-      title: 'Video Calling App',
-      description: 'This is a description for project five. It includes details about what the project is about, technologies used, and any other relevant information.',
-      image:'../videocall.png' 
+    // {
+    //   title: 'Video Calling App',
+    //   description: 'This is a description for project five. It includes details about what the project is about, technologies used, and any other relevant information.',
+    //   image:'../videocall.png' 
   
-    },
+    // },
     {
       title: 'Costen',
       description: 'This project is a Expense Travel Management Tool which help organization in managing there travel and reimbursment.',

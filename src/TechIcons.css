@@ -1,50 +1,98 @@
-.floating-icons {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .icon {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px; /* Adjust icon size as needed */
-    height: 50px; /* Adjust icon size as needed */
-    border-radius: 50%;
-    /* background-color: #ffffff; Background color */
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); Shadow for icons */
-    animation: floatAnimation 3s infinite alternate; /* Animation */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  position: absolute;
+  font-size: 40px;
+  color: black;
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-top {
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float-up-down 2s infinite alternate;
+}
+
+.icon-top-left {
+  top: 14%;
+  left: -2%;
+  transform: translateX(-50%);
+  animation: float-left-right 2s infinite alternate-reverse;
+}
+
+.icon-left {
+  left: -12%;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: float-left-right 2s infinite alternate;
+}
+.icon-bottom-left {
+  left: -6%;
+  top: 83%;
+  transform: translateY(-50%);
+  animation: float-left-right 2s infinite alternate;
+}
+
+.icon-right {
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: float-left-right 2s infinite alternate-reverse;
+}
+.icon-more {
+  right: -2%;
+  top: 17%;
+  transform: translateY(-50%);
+  animation: float-left-right 2s infinite alternate-reverse;
+}
+.icon-bottom-right {
+  right: 2%;
+  top: 85%;
+  transform: translateY(-50%);
+  animation: float-left-right 2s infinite alternate-reverse;
+}
+.icon-bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float-up-down 2s infinite alternate-reverse;
+}
+/* Floating Animations */
+@keyframes float-up-down {
+  from {
+    transform: translateX(-50%) translateY(0);
   }
-  
-  .icon svg {
-    font-size: 24px; /* Adjust icon size */
+  to {
+    transform: translateX(-50%) translateY(-10px);
   }
-  
-  .icon:nth-child(1) {
-    top: 50%;
-    left: 50%;
+}
+
+@keyframes float-left-right {
+  from {
+    transform: translateY(-50%) translateX(0);
   }
-  
-  .icon:nth-child(2) {
-    top: 30%;
-    left: 30%;
+  to {
+    transform: translateY(-50%) translateX(10px);
   }
-  
-  .icon:nth-child(3) {
-    top: 70%;
-    left: 70%;
-  }
-  
-  /* Add more styles for additional icons */
-  
-  @keyframes floatAnimation {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-20px);
-    }
-  }
-  
+}
+
