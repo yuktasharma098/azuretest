@@ -34,7 +34,7 @@ const About = () => {
     }, []);
 
     return (
-        <Content id="about" style={{ minHeight: '100vh', padding: '20px', position: 'relative' }}>
+        <Content id="about" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
             {/* Background Gradient */}
             <div className="background-gradient" />
 
