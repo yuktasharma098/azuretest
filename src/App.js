@@ -1,68 +1,97 @@
-import React from 'react';
-import { Layout, Menu, Anchor, Affix } from 'antd';
-import './App.css'; // Import your custom CSS if needed
+import React, { useState } from 'react';
+import { Layout, Menu, Anchor, Affix, Drawer, Button } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
+import './App.css';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 
-import TechIcons from './TechIcons';
-
 const { Header, Content } = Layout;
 const { Link } = Anchor;
 
-const App = () => (
+const App = () => {
+  const [visible, setVisible] = useState(false);
 
-  <Layout>
-    <Affix>
-      <Header className="custom-header">
-        <div className="logo">
-          <img src="Yukta.jpg" alt="Logo" style={{ width: '60px', height: 'auto', marginRight: '8px', borderRadius: "30px" }} />
-          <span style={{
-            fontWeight: "600",
-            fontSize: "1.5rem",
-            background: "-webkit-linear-gradient(left, #f093fb, #f5576c)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent"
-          }}>Simplicity is the soul of efficiency</span>
-        </div>
-        <Menu
-          theme="light"
-          mode="horizontal"
-          defaultSelectedKeys={['add']}
-          className="custom-menu"
-        >
-          <Menu.Item key="about" className="custom-menu-item">
-            <Anchor affix={false}>
-              <Link href="#about" title="About" />
-            </Anchor>
-          </Menu.Item>
-          <Menu.Item key="projects" className="custom-menu-item">
-            <Anchor affix={false}>
-              <Link href="#projects" title="Projects" />
-            </Anchor>
-          </Menu.Item>
-          {/* <Menu.Item key="skill" className="custom-menu-item">
-            <Anchor affix={false}>
-              <Link href="#skill" title="Skill Baloon" />
-            </Anchor>
-          </Menu.Item> */}
-          <Menu.Item key="contact" className="custom-menu-item">
-            <Anchor affix={false}>
-              <Link href="#contact" title="Contact" />
-            </Anchor>
-          </Menu.Item>
-        
-        </Menu>
-      </Header>
-    </Affix>
-    <Content style={{ marginTop: 64 }}>
-      <About />
-      <Projects />
-      {/* <TechIcons />  */}
+  const showDrawer = () => {
+    setVisible(true);
+  };
 
-      <Contact />
-    </Content>
-  </Layout>
-);
+  const closeDrawer = () => {
+    setVisible(false);
+  };
+
+  return (
+    <Layout>
+      <Affix>
+        <Header className="custom-header">
+          <div className="logo">
+            <img
+              src="Yukta.jpg"
+              alt="Logo"
+              style={{ width: '50px', height: 'auto', marginRight: '8px', borderRadius: '30px' }}
+            />
+            <span className="tagline">Simplicity is the soul of efficiency</span>
+          </div>
+
+          {/* Desktop Menu */}
+          <Menu theme="light" mode="horizontal" className="custom-menu">
+            <Menu.Item key="about" className="custom-menu-item">
+              <Anchor affix={false}>
+                <Link href="#about" title="About" />
+              </Anchor>
+            </Menu.Item>
+            <Menu.Item key="projects" className="custom-menu-item">
+              <Anchor affix={false}>
+                <Link href="#projects" title="Projects" />
+              </Anchor>
+            </Menu.Item>
+            <Menu.Item key="contact" className="custom-menu-item">
+              <Anchor affix={false}>
+                <Link href="#contact" title="Contact" />
+              </Anchor>
+            </Menu.Item>
+          </Menu>
+
+          {/* Mobile Menu Button */}
+          <Button className="menu-button" icon={<MenuOutlined />} onClick={showDrawer} />
+
+          {/* Smoother Mobile Drawer */}
+          <Drawer
+            title="Menu"
+            placement="right"
+            closable
+            onClose={closeDrawer}
+            visible={visible}
+            className="custom-drawer"
+          >
+            <Menu mode="vertical" className="drawer-menu">
+              <Menu.Item key="about" onClick={closeDrawer}>
+                <Anchor affix={false}>
+                  <Link href="#about" title="About" />
+                </Anchor>
+              </Menu.Item>
+              <Menu.Item key="projects" onClick={closeDrawer}>
+                <Anchor affix={false}>
+                  <Link href="#projects" title="Projects" />
+                </Anchor>
+              </Menu.Item>
+              <Menu.Item key="contact" onClick={closeDrawer}>
+                <Anchor affix={false}>
+                  <Link href="#contact" title="Contact" />
+                </Anchor>
+              </Menu.Item>
+            </Menu>
+          </Drawer>
+        </Header>
+      </Affix>
+
+      <Content style={{ marginTop: 64 }}>
+        <About />
+        <Projects />
+        <Contact />
+      </Content>
+    </Layout>
+  );
+};
 
 export default App;
