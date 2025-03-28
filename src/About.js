@@ -49,8 +49,8 @@ const About = () => {
                         </div>
                     </motion.h2>
                     <motion.p className="about-description">
-                        React Developer with 3.6+ years of experience in building scalable web applications using React, Redux, HTML, CSS, and JavaScript. Developed projects like the Costen travel expense app and IBPRO payroll desktop app. Skilled in API integration, Git, React Hooks, Redux Persist, and Ant Design. Strong problem-solving skills and a commitment to clean, maintainable code.
-                    </motion.p>
+                   <b> React Developer with 3.6+ years</b> of experience in building scalable<b> web and desktop applications using React, Redux, and Electron.js. Skilled in React Hooks, Redux Persist, Ant Design, API integration, and Azure deployments</b>, with a focus on clean code and UI/UX optimization. Experienced in cross-platform<b>desktop development, state management, and Git</b> . Strong problem-solving skills, code reviews, and collaboration with cross-functional teams to ensure seamless execution. Passionate about creating efficient, user-friendly applications while staying updated with the latest technologies.
+                            </motion.p>
                 </motion.div>
 
                 {/* Image and Floating Icons */}
