@@ -17,10 +17,7 @@ export const projects = [
     description: 'A personal finance management app that allows users to add, view, and filter transactions by date, providing a summary of total income, expenses, and balance. It features an interactive chart for visual insights, helping users track and analyze their finances with ease. 🚀',
     image: '../finance.png',
     link: 'https://personalfinancetracker-xzz0.onrender.com',
-    media: [
-      { type: "video", src: "../financevideo.mov" },
-
-    ]
+  
 
   },
   {
