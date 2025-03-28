@@ -42,9 +42,6 @@ Ready to test your word skills? Go ahead and take on the challenge! 🧙‍♂�
     media:[{
       type:"image",src:"../wordgamescreenshot.png",
 
-    },{
-      type:"video",src:"../wordgame.mov"
-
     }]
    
 
