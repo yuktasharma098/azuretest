@@ -1,6 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type";
 
-// data.js
 export const projects = [
 
 
@@ -11,7 +9,6 @@ export const projects = [
     link: 'https://azuretest-xjpm.onrender.com',
     media: [
       { type: "image", src: "../portfolioimage.png" },
-      { type: "video", src: "../porfoliovideo.mov" },
     ]
 
   },
@@ -60,7 +57,7 @@ Ready to test your word skills? Go ahead and take on the challenge! 🧙‍♂�
     media: [
       { type: "image", src: "../tictactoeimg.png" },
 
-      { type: "video", src: "../tictactoeapp.mov" },
+    
 
     ]
 
